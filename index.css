@@ -1,0 +1,17 @@
+/*
+  Style entry point.
+  Order matters: Tailwind's reset → design tokens → game styles → Tailwind utilities last,
+  so utility classes in the JSX (mt-4, gap-3, md:grid-cols-2…) can still fine-tune the game styles.
+*/
+@import "tailwindcss/base";
+@import "./styles/tokens.css";
+
+@import "tailwindcss/components";
+@import "./styles/background.css";
+@import "./styles/ui.css";
+@import "./styles/orbitto.css";
+@import "./styles/stage.css";
+@import "./styles/card.css";
+@import "./styles/overlays.css";
+
+@import "tailwindcss/utilities";
